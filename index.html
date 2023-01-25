@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário básico</title>
+</head>
+<body>
+    <header>
+        <h2>Logo</h2>
+        <h2>Formulário</h2>
+    </header>
+    <form>
+        <div class="name-div">
+            <label for="name-field">Nome Completo:</label>
+            <input name="name-field" type="text"/>
+        </div>
+        <div class="email-div">
+            <label for="email-field">E-mail:</label>
+            <input name="email-field" type="email"/>
+        </div>
+        <div class="phone-div">
+            <label for="phone-field">Telefone:</label>
+            <input 
+                name="phone-field"
+                type="text"
+                placeholder="(xx)xxxxx-xxxx"
+            />
+        </div>
+        <div class="civil-div">
+            <label for="civil-field">Estado Civil:</label>
+            <select name="civil-field">
+                <option value="Solteiro">Solteiro</option>
+                <option value="Casado">Casado</option>
+                <option value="Viúvo">Viúvo</option>
+                <option value="Divorciado">Divorciado</option>
+            </select>
+        </div>
+        <div class="stack-div">
+            <label for="stack-field">Qual stack você deseja aprender?</label>
+            <input type="radio" value="Frontend">Frontend</input>
+            <input type="radio" value="Backend">Backend</input>
+            <input type="radio" value="Fullstack">Fullstack</input>
+        </div>
+        <div class="about-div">
+            <label for="about-field">Fale sobre você:</label>
+            <textarea name="about-field" rows="4" cols="40"></textarea>
+        </div>
+        <div class="submit-div">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
