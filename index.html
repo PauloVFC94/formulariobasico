@@ -4,54 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Formulário básico</title>
 </head>
-<body>
+<body class="main-page">
     <header>
-        <h2>Logo</h2>
-        <h2>Formulário</h2>
+        <img src="PV.png" />
     </header>
-    <form>
-        <div class="name-div">
-            <label for="name-field">Nome Completo:</label>
-            <input name="name-field" class="name-field" type="text"/>
-        </div>
-        <div class="email-div">
-            <label for="email-field">E-mail:</label>
-            <input name="email-field" class="email-field" type="email"/>
-        </div>
-        <div class="phone-div">
-            <label for="phone-field">Telefone:</label>
-            <input 
-                name="phone-field"
-                type="text"
-                placeholder="(xx)xxxxx-xxxx"
-            />
-        </div>
-        <div class="civil-div">
-            <label for="civil-field">Estado Civil:</label>
-            <select name="civil-field">
-                <option value="Solteiro">Solteiro</option>
-                <option value="Casado">Casado</option>
-                <option value="Viúvo">Viúvo</option>
-                <option value="Divorciado">Divorciado</option>
-            </select>
-        </div>
-        <div class="stack-div">
-            <label for="stack-field">Qual stack você deseja aprender?</label>
-            <input class="stack-input" name="stack-radio" type="radio" value="Frontend">Frontend
-            <input class="stack-input" name="stack-radio" type="radio" value="Backend">Backend
-            <input class="stack-input" name="stack-radio" type="radio" value="Fullstack">Fullstack
-        </div>
-        <div class="about-div">
-            <label for="about-field">Fale sobre você:</label>
-            <textarea name="about-field" rows="4" cols="40"></textarea>
-        </div>
-        <div class="submit-div">
-            <button class="submit-btn" type="button">Enviar</button>
-        </div>
-    </form>
-    <footer>Paulo Ferreira</footer>
+    <div class="middle-div">
+        <h1 class="name-title">Formulário de Inscrição</h2>
+        <form class="form">
+            <div class="name-div">
+                <label for="name-field">Nome Completo:</label>
+                <input name="name-field" class="name-field" type="text"/>
+            </div>
+            <div class="email-div">
+                <label for="email-field">E-mail:</label>
+                <input name="email-field" class="email-field" type="email"/>
+            </div>
+            <div class="phone-div">
+                <label for="phone-field">Telefone:</label>
+                <input 
+                    name="phone-field"
+                    class="phone-field"
+                    type="tel"
+                    maxlength="15"
+                />
+            </div>
+            <div class="civil-div">
+                <label for="civil-field">Estado Civil:</label>
+                <select name="civil-field" class="civil-input">
+                    <option value="Solteiro">Solteiro</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Viúvo">Viúvo</option>
+                    <option value="Divorciado">Divorciado</option>
+                </select>
+            </div>
+            <div class="stack-div">
+                <label for="stack-field">Qual stack você deseja aprender?</label>
+                <div>
+                    <input class="stack-input" name="stack-radio" type="radio" value="Frontend">Frontend
+                    <input class="stack-input" name="stack-radio" type="radio" value="Backend">Backend
+                    <input class="stack-input" name="stack-radio" type="radio" value="Fullstack">Fullstack
+                </div>
+            </div>
+            <div class="about-div">
+                <label for="about-field">Fale sobre você:</label>
+                <textarea name="about-field" class="about-field" rows="4" cols="40"></textarea>
+            </div>
+            <div class="submit-div">
+                <button class="submit-btn" type="button">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <footer>Paulo Ferreira - Github: <link>github.com/PauloVFC94</link></footer>
     <script src="script.js"></script>
 </body>
 </html>
